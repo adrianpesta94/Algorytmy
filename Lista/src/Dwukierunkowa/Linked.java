@@ -26,8 +26,8 @@ public class Linked {
         if (isEmpty()){
             first = list;
         }else {
-            last.prev = list;
-            list.next = last;
+            last.next = list;
+            list.prev = last;
         }
         last = list;
     }
