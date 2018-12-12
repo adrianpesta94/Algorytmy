@@ -13,7 +13,7 @@ public class Linked {
     public void addFirst(int value){
         List list = new List(value);
         if (isEmpty()){
-            last = list;
+            first = list;
         }else {
             first.prev = list;
         }
