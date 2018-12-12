@@ -16,6 +16,12 @@ public class Main {
 
         listaDwukierunkowa.show();
         listaDwukierunkowa.showReverse();
+
+        listaDwukierunkowa.pollFirst();
+        listaDwukierunkowa.pollLast();
+
+        listaDwukierunkowa.show();
+        listaDwukierunkowa.showReverse();
     }
 
 }
