@@ -32,7 +32,27 @@ public class Linked {
         last = list;
     }
 
-    public boolean isEmpty(){
+    public void show(){
+        System.out.print("Lista: początek -> koniec: ");
+        List current = first;
+        while (current != null){
+            current.Linked();
+            current = current.next;
+        }
+        System.out.println(" ");
+    }
+
+    public void showReverse(){
+        System.out.print("Lista: koniec -> początek: ");
+        List current = last;
+        while (current != null){
+            current.Linked();
+            current = current.prev;
+        }
+        System.out.println(" ");
+    }
+
+    private boolean isEmpty(){
         return first == null;
     }
 
