@@ -13,7 +13,7 @@ public class Linked {
     public void addFirst(int value){
         List list = new List(value);
         if (isEmpty()){
-            first = list;
+            last = list;
         }else {
             first.prev = list;
         }
@@ -21,7 +21,7 @@ public class Linked {
         first = list;
     }
 
-    public void  addLast(int value){
+    public void addLast(int value){
         List list = new List(value);
         if (isEmpty()){
             first = list;
@@ -30,6 +30,36 @@ public class Linked {
             list.prev = last;
         }
         last = list;
+    }
+
+    public void peekFirst(int value){
+
+    }
+
+    public void peekLast(int value){
+
+    }
+
+    public List pollFirst(){
+        List tmp = first;
+        if (first == null){
+            last = null;
+        }else {
+            first.next.prev = null;
+        }
+        first = first.next;
+        return tmp;
+    }
+
+    public List pollLast(){
+        List tmp = last;
+        if (first.next == null){
+            first = null;
+        }else {
+            last.prev.next = null;
+        }
+        last = last.prev;
+        return tmp;
     }
 
     public void show(){
