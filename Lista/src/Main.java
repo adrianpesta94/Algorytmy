@@ -22,6 +22,12 @@ public class Main {
 
         listaDwukierunkowa.show();
         listaDwukierunkowa.showReverse();
+
+        listaDwukierunkowa.peekFirst(23);
+        listaDwukierunkowa.show();
+
+        listaDwukierunkowa.peekLast(35);
+        listaDwukierunkowa.showReverse();
     }
 
 }

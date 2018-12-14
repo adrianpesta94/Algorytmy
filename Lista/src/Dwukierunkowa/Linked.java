@@ -32,38 +32,50 @@ public class Linked {
         last = list;
     }
 
-    public void peekFirst(int value){
-
+    public List peekFirst(int value){
+        List peek = new List(value);
+        if (first == null){
+            first.prev = null;
+        }else if (first.prev == null){
+            first.next = null;
+        }
+        return peek;
     }
 
-    public void peekLast(int value){
-
+    public List peekLast(int value){
+        List peek = new List(value);
+        if (last == null){
+            last.next = null;
+        }else if (last.next == null){
+            last.prev = null;
+        }
+        return peek;
     }
 
     public List pollFirst(){
-        List tmp = first;
+        List poll = first;
         if (first == null){
             last = null;
         }else {
             first.next.prev = null;
         }
         first = first.next;
-        return tmp;
+        return poll;
     }
 
     public List pollLast(){
-        List tmp = last;
+        List poll = last;
         if (first.next == null){
             first = null;
         }else {
             last.prev.next = null;
         }
         last = last.prev;
-        return tmp;
+        return poll;
     }
 
     public void show(){
-        System.out.print("Lista: początek -> koniec: ");
+        System.out.print("Lista: początek - koniec: ");
         List current = first;
         while (current != null){
             current.Linked();
@@ -73,7 +85,7 @@ public class Linked {
     }
 
     public void showReverse(){
-        System.out.print("Lista: koniec -> początek: ");
+        System.out.print("Lista: koniec - początek: ");
         List current = last;
         while (current != null){
             current.Linked();
