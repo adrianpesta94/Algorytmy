@@ -53,7 +53,7 @@ public class LinkedList {
 
     public List pollFirst(){
         List poll = first;
-        if (first == null){
+        if (first.next == null){
             last = null;
         }else {
             first.next.prev = null;
@@ -64,7 +64,7 @@ public class LinkedList {
 
     public List pollLast(){
         List poll = last;
-        if (last == null){
+        if (last.prev == null){
             first = null;
         }else {
             last.prev.next = null;

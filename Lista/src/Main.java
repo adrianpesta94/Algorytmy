@@ -21,16 +21,16 @@ public class Main {
         lista.show();
         lista.showReverse();
 
-        lista.peekFirst(23);
-        lista.show();
-
-        lista.peekLast(35);
-        lista.showReverse();
-
         lista.pollFirst();
         lista.pollLast();
 
         lista.show();
+        lista.showReverse();
+
+        lista.peekFirst(23);
+        lista.show();
+
+        lista.peekLast(35);
         lista.showReverse();
     }
 
