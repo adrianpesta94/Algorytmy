@@ -96,5 +96,4 @@ public class LinkedList {
     public boolean isEmpty(){
         return first == null;
     }
-
 }

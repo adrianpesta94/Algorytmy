@@ -9,10 +9,12 @@ public class Main {
         lista.addFirst(22);
         lista.addFirst(23);
         lista.addFirst(24);
+        lista.addFirst(25);
 
         lista.addLast(34);
         lista.addLast(35);
         lista.addLast(36);
+        lista.addLast(37);
 
         lista.show();
         lista.showReverse();
