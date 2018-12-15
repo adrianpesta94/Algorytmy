@@ -94,6 +94,14 @@ public class LinkedList {
     }
 
     public boolean isEmpty(){
+//        List empty = first;
+//        while (empty != null) {
+//            if (empty.value != value) {
+//                return true;
+//            }
+//            empty = empty.next;
+//        }
+//        return false;
         return first == null;
     }
 }

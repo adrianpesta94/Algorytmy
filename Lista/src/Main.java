@@ -27,21 +27,21 @@ public class Main {
         lista.show();
         lista.showReverse();
 
-        lista.pollLast();
-        lista.pollLast();
-
-        lista.showReverse();
-
         lista.pollFirst();
         lista.pollFirst();
+        lista.pollLast();
+        lista.pollLast();
 
         lista.show();
+        lista.showReverse();
 
         lista.peekFirst(23);
         lista.show();
 
         lista.peekLast(35);
         lista.showReverse();
+
+        System.out.println("Wypisz czy lista jest pusta: " + lista.isEmpty() +  ".");
     }
 
 }
