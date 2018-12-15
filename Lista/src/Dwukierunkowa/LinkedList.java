@@ -64,7 +64,7 @@ public class LinkedList {
 
     public List pollLast(){
         List poll = last;
-        if (first.next == null){
+        if (last == null){
             first = null;
         }else {
             last.prev.next = null;
