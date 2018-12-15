@@ -4,30 +4,30 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Linked listaDwukierunkowa = new Linked();
+        Linked lista = new Linked();
 
-        listaDwukierunkowa.addFirst(22);
-        listaDwukierunkowa.addFirst(23);
-        listaDwukierunkowa.addFirst(24);
+        lista.addFirst(22);
+        lista.addFirst(23);
+        lista.addFirst(24);
 
-        listaDwukierunkowa.addLast(34);
-        listaDwukierunkowa.addLast(35);
-        listaDwukierunkowa.addLast(36);
+        lista.addLast(34);
+        lista.addLast(35);
+        lista.addLast(36);
 
-        listaDwukierunkowa.show();
-        listaDwukierunkowa.showReverse();
+        lista.show();
+        lista.showReverse();
 
-        listaDwukierunkowa.pollFirst();
-        listaDwukierunkowa.pollLast();
+        lista.pollFirst();
+        lista.pollLast();
 
-        listaDwukierunkowa.show();
-        listaDwukierunkowa.showReverse();
+        lista.show();
+        lista.showReverse();
 
-        listaDwukierunkowa.peekFirst(23);
-        listaDwukierunkowa.show();
+        lista.peekFirst(23);
+        lista.show();
 
-        listaDwukierunkowa.peekLast(35);
-        listaDwukierunkowa.showReverse();
+        lista.peekLast(35);
+        lista.showReverse();
     }
 
 }
