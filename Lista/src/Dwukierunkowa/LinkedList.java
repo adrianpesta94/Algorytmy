@@ -102,6 +102,6 @@ public class LinkedList {
 //            empty = empty.next;
 //        }
 //        return false;
-        return first == null;
+        return first == null && last == null;
     }
 }

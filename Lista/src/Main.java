@@ -41,6 +41,11 @@ public class Main {
         lista.peekLast(35);
         lista.showReverse();
 
+        lista.pollFirst();
+
+        lista.show();
+        lista.showReverse();
+
         System.out.println("Wypisz czy lista jest pusta: " + lista.isEmpty() +  ".");
     }
 
