@@ -6,30 +6,29 @@ public class LinkedList {
     private List last;
 
     public LinkedList(){
-        first = null;
-        last = null;
+        first = last = null;
     }
 
     public void addFirst(int value){
-        List list = new List(value);
+        List add = new List(value);
         if (isEmpty()){
-            last = list;
+            last = add;
         }else {
-            first.prev = list;
+            first.prev = add;
         }
-        list.next = first;
-        first = list;
+        add.next = first;
+        first = add;
     }
 
     public void addLast(int value){
-        List list = new List(value);
+        List add = new List(value);
         if (isEmpty()){
-            first = list;
+            first = add;
         }else {
-            last.next = list;
-            list.prev = last;
+            last.next = add;
+            add.prev = last;
         }
-        last = list;
+        last = add;
     }
 
     public List peekFirst(int value){
