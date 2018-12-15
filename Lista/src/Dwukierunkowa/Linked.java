@@ -76,25 +76,25 @@ public class Linked {
 
     public void show(){
         System.out.print("Lista: początek - koniec: ");
-        List current = first;
-        while (current != null){
-            current.Linked();
-            current = current.next;
+        List show = first;
+        while (show != null){
+            show.Linked();
+            show = show.next;
         }
         System.out.println(" ");
     }
 
     public void showReverse(){
         System.out.print("Lista: koniec - początek: ");
-        List current = last;
-        while (current != null){
-            current.Linked();
-            current = current.prev;
+        List reverse = last;
+        while (reverse != null){
+            reverse.Linked();
+            reverse = reverse.prev;
         }
         System.out.println(" ");
     }
 
-    private boolean isEmpty(){
+    public boolean isEmpty(){
         return first == null;
     }
 
