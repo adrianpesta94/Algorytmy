@@ -1,10 +1,10 @@
-import Dwukierunkowa.Linked;
+import Dwukierunkowa.LinkedList;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Linked lista = new Linked();
+        LinkedList lista = new LinkedList();
 
         lista.addFirst(22);
         lista.addFirst(23);

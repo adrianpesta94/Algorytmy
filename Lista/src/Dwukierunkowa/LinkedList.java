@@ -1,11 +1,11 @@
 package Dwukierunkowa;
 
-public class Linked {
+public class LinkedList {
 
     private List first;
     private List last;
 
-    public Linked(){
+    public LinkedList(){
         first = null;
         last = null;
     }
