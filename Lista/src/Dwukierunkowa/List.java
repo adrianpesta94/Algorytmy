@@ -8,6 +8,7 @@ public class List {
 
     public List(int value) {
         this.value = value;
+        next = prev = null;
     }
 
     public void Linked(){
