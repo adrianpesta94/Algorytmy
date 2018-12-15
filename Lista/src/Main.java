@@ -27,6 +27,16 @@ public class Main {
         lista.show();
         lista.showReverse();
 
+        lista.pollLast();
+        lista.pollLast();
+
+        lista.showReverse();
+
+        lista.pollFirst();
+        lista.pollFirst();
+
+        lista.show();
+
         lista.peekFirst(23);
         lista.show();
 
